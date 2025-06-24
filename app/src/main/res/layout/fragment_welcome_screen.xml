@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mainBackgroundColor"
+    tools:context="com.fragments.WelcomeScreenFragment">
+    <com.ayushi.lexicon.WaveView
+        android:id="@+id/waveHeader"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:waveHeight="50dp"
+        app:waveCount="3"
+        app:waveColor="#04293A"
+        app:waveSecondaryColor="#1A4559"
+        app:waveAlpha="0.45"
+        app:waveProgress="1"
+        app:waveVelocity="3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Lexicon"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40sp"/>
+    <TextView
+        android:id="@+id/descrTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:text="Lexicon: Converse with clarity"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_above="@+id/continueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/descrTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/robot_animation"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/continueBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/black"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
