@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainBackgroundColor"
+    tools:context="com.fragments.RobotListScreenFragment">
+
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/toolbar_layout"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectTxt"
+        android:layout_gravity="center"
+        android:textIsSelectable="true"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_edittext"
+        tools:text="Move to Chat Screen"/>
+</LinearLayout>

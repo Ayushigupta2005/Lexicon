@@ -35,5 +35,21 @@
         android:id="@+id/chatScreenFragment"
         android:name="com.fragments.ChatScreenFragment"
         android:label="fragment_chat_screen"
-        tools:layout="@layout/fragment_chat_screen" />
+        tools:layout="@layout/fragment_chat_screen" >
+        <action
+            android:id="@+id/action_chatScreenFragment_to_selectTextScreenFragment"
+            app:destination="@id/selectTextScreenFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/selectTextScreenFragment"
+        android:name="com.fragments.SelectTextScreenFragment"
+        android:label="SelectTextScreenFragment" >
+        <argument
+            android:name="selectedMessage"
+            app:argType="string" />
+    </fragment>
 </navigation>
