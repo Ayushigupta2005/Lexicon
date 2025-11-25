@@ -21,9 +21,9 @@ soon
 
 ## 📱 Current Progress
 - [x] Welcome screen UI
-- [ ] Chat screen
-- [ ] API integration
-- [ ] Room DB for history
+- [x] Chat screen
+- [x] API integration
+- [x] Room DB for history
 
 ## 🧠 Coming Soon
 - Voice input
